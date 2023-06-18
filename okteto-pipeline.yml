@@ -1,3 +1,3 @@
 deploy:
-  - okteto build -t okteto.dev/hdsipeaea:latest
+  - okteto build -t okteto.dev/hudsoyes:latest
   - kubectl apply -f k8s
