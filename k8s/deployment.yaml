@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: okudyr
+  name: okudyrds
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: okudyr
+      app: okudyrds
   template:
     metadata:
       labels:
-        app: okudyr
+        app: okudyrds
     spec:
       containers:
-      - image: okteto.dev/okudyr:latest
-        name: okudyr
+      - image: okteto.dev/okudyrds:latest
+        name: okudyrds
         ports:
         - containerPort: 8080
         env:
