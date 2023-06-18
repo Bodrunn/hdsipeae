@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: okudyrds
+  name: hdsipeae
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: okudyrds
+      app: hdsipeae
   template:
     metadata:
       labels:
-        app: okudyrds
+        app: hdsipeae
     spec:
       containers:
-      - image: okteto.dev/okudyrds:latest
-        name: okudyrds
+      - image: okteto.dev/hdsipeae:latest
+        name: hdsipeae
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "e3e77f37-f92d-4270-849d-13302ce9ba21"
+          value: "562a9617-e3f4-41ab-a498-9cd5f8acdd97"
         - name: Vless_Path
           value: "/vlhhse46t6"
         - name: Vmess_UUID
-          value: "e3e77f37-f92d-4270-849d-13302ce9ba21"
+          value: "562a9617-e3f4-41ab-a498-9cd5f8acdd97"
         - name: Vmess_Path
           value: "/vmgdtwti6"
         - name: Share_Path
