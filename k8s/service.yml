@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hdsipeaea
+  name: hudsoyes
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "hdsipeaea"
+  - name: "hudsoyes"
     port: 8080
   selector:
-    app: ohdsipeaea
+    app: hudsoyes
