@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hdsipeaea
+  name: hudsoyes
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hdsipeaea
+      app: hudsoyes
   template:
     metadata:
       labels:
-        app: hdsipeaea
+        app: hudsoyes
     spec:
       containers:
-      - image: okteto.dev/hdsipeaea:latest
-        name: hdsipeaea
+      - image: okteto.dev/hudsoyes:latest
+        name: hudsoyes
         ports:
         - containerPort: 8080
         env:
